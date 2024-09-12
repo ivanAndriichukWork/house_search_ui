@@ -25,13 +25,12 @@ export const ItemsGrid: React.FC = () => {
   }
 
   return <Grid container spacing={4}>
-
-    {houses.map(( house, index ) =>
+    {houses.length > 0 && houses.map(( house, index ) =>
       <Grid key={index} size={4} display={'flex'}>
         {house && <HouseItem house={house}/>}
       </Grid>
     )}
-    {pagination.totalCount / 9 && <Grid size={12} display={'flex'} justifyContent={'center'}>
+    {houses.length > 0 && pagination.totalCount / 9 && <Grid size={12} display={'flex'} justifyContent={'center'}>
       <Pagination
         onChange={HandleChange}
         count={+Math.ceil(pagination.totalCount / 9)}
