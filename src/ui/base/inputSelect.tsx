@@ -12,7 +12,7 @@ interface InputSelect {
 }
 
 const InputSelect = ( { inputLabel, id, onChange, options, value }: InputSelect ) => {
-  return <FormControl sx={{ width: '132px' }}>
+  return <FormControl sx={{ width: '131px' }}>
     <Select
       labelId={id}
       id={`${id}-select`}

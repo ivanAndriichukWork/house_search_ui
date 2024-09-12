@@ -28,7 +28,7 @@ export const ItemsGrid: React.FC = () => {
 
     {houses.map(( house, index ) =>
       <Grid key={index} size={4} display={'flex'}>
-        <HouseItem house={house}/>
+        {house && <HouseItem house={house}/>}
       </Grid>
     )}
     {pagination.totalCount / 9 && <Grid size={12} display={'flex'} justifyContent={'center'}>
@@ -91,8 +91,6 @@ const HouseItem = ( { house }: HouseItemProps ) => {
       />
       }
       <CardContent>
-
-
         <Typography gutterBottom fontWeight={'bold'} variant="h6" mb={'12px'} textTransform={'uppercase'} lineHeight={1}
                     component="div"
                     sx={{

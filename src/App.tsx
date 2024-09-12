@@ -102,7 +102,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline/>
         <Container maxWidth={'lg'}>
-          <Grid container spacing={4} sx={{minHeight:'100vh'}}>
+          <Grid container spacing={4}>
             <Grid size={12} pt={'60px'} >
               <Header/>
             </Grid>

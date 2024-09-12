@@ -7,7 +7,7 @@ interface InputWsIcon {
 }
 
 export const InputWsIcon = ( { placeholder, icon, id }: InputWsIcon ) => {
-  return <FormControl variant="outlined" sx={{ minWidth: '380px' }}>
+  return <FormControl variant="outlined" sx={{ minWidth: '375px' }}>
     <OutlinedInput
       placeholder={placeholder}
       id={id}
